@@ -1,14 +1,19 @@
 ﻿//Задача 25
-/*Console.Write("Введите первое число: ");
+Console.Write("Введите первое число: ");
 int A = int.Parse(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int B = int.Parse(Console.ReadLine());
-Method(A,B);
+Console.WriteLine(Method(A,B));
 
-void Method (int x, int y)
+int Method (int x, int y)
 {
-    Console.Write(Math.Pow(x,y));
-}*/
+    int result = x;
+    for(int i = 1; i<y; i++)
+    {
+     result = result * x;
+    }
+    return result;
+}
 
 //Задача 27
 
